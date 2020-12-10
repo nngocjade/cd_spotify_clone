@@ -24,6 +24,7 @@ body {
   height: 100%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -32,7 +33,7 @@ img.logo {
   width: 8.125em;
 }
 
-span {
+.white {
   color: white;
 }
 
@@ -40,4 +41,61 @@ a.nav-link {
   text-decoration: none;
   color: white;
   margin: 1rem;
+}
+
+/* ========================================================
+                   SECTION 1
+==========================================================*/
+section {
+  width: 100%;
+  min-height: 70vh;
+  background-color: #ff4632;
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 1140px;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  height: 450px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+.content > h1 > span {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.content > h5 > .note {
+  font-weight: 400;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+button {
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 18em;
+  padding: 1rem;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
