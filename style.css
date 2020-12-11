@@ -24,6 +24,16 @@ button {
   letter-spacing: 2px;
 }
 
+a:hover {
+  color: #1ed760;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+}
+
 /* ========================================================
                        NAVIGATION
 ==========================================================*/
@@ -34,6 +44,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
 }
 
 .nav {
@@ -53,15 +64,6 @@ img.logo {
 
 .white {
   color: white;
-}
-
-a.nav-link {
-  text-decoration: none;
-  color: white;
-  margin: 1rem;
-}
-a.nav-link:hover {
-  color: #1ed760;
 }
 
 /* ========================================================
@@ -105,6 +107,7 @@ section {
                    SECTION 1
 ==========================================================*/
 #section1 {
+  padding-top: 10em;
   background-color: #ff4632;
 }
 
@@ -263,4 +266,12 @@ footer .row.two {
 }
 #USAflag {
   width: 25px;
+}
+
+.footer-bottom-links {
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.8rem;
 }
