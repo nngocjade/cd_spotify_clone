@@ -200,6 +200,7 @@ footer {
   color: #919496;
   min-height: 70vh;
   padding: 5rem 0;
+  box-sizing: border-box;
 }
 
 footer > .content-container {
@@ -231,7 +232,7 @@ footer .column {
   display: flex;
   flex-direction: column;
   font-weight: 400;
-  line-height: 2.5;
+  line-height: 0.5;
   letter-spacing: 0.08em;
 }
 
@@ -250,22 +251,33 @@ footer .header {
   text-transform: uppercase;
 }
 
+#socialIcons a {
+  margin-top: 0;
+  margin-right: 0;
+  height: fit-content;
+  width: fit-content;
+}
+
 #socialIcons a img {
   width: 50px;
   background-color: #222326;
   padding: 0.65rem;
   border-radius: 50%;
-  margin: 0 1rem;
+  margin-left: 2rem;
 }
 
 footer .row.two {
   display: flex;
   justify-content: flex-end;
   color: white;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 #USAflag {
   width: 25px;
+}
+
+.footer .row.three {
+  font-size: 2rem;
 }
 
 .footer-bottom-links {
@@ -273,5 +285,18 @@ footer .row.two {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.footer-bottom-links,
+#copyRight {
   font-size: 0.8rem;
+}
+
+footer a {
+  margin-left: 0;
+}
+
+#copyRight {
+  display: inline-flex;
+  align-items: center;
 }
